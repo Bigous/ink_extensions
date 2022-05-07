@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>Export to ICO</name>
+    <id>org.inkscape.raster.ico_output</id>
+
+    <param name="size" type="optiongroup" _gui-text="Select Size:">
+        <option value="16">16x16</option>
+        <option value="32">32x32</option>
+        <option value="48">48x48</option>
+        <option value="64">64x64</option>
+        <option value="96">96x96</option>
+        <option value="128">128x128</option>
+        <option value="256">256x256</option>
+    </param>
+
+    <output raster="true">
+        <extension>.ico</extension>
+        <mimetype>image/ico</mimetype>
+        <filetypename>ICO (*.ico)</filetypename>
+        <filetypetooltip>Render to ICO file format</filetypetooltip>
+    </output>
+
+    <script>
+        <command location="inx" interpreter="python">ico_export.py</command>
+    </script>
+</inkscape-extension>
+
