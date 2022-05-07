@@ -1,5 +1,7 @@
 import inkex
 
+# Based on the Inkscape extension "Export to PNG" - https://gitlab.com/inkscape/extensions
+
 # Define an Inkscape extension for exporting the image to a .ico file
 class IcoOutput(inkex.RasterOutputExtension):
 
